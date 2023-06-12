@@ -41,7 +41,6 @@ GROUP BY  MONTH_ID
 ORDER BY 2 desc;
 
 
---November seems to be the month, what product do they sell in November, Classic I believe
 SELECT  MONTH_ID, PRODUCTLINE, sum(sales) Revenue, count(ORDERNUMBER)
 FROM [customer sales analysis].[dbo].[sales_data_sample]
 WHERE YEAR_ID = 2004 AND MONTH_ID = 11 --change year to see the rest
